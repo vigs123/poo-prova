@@ -10,7 +10,7 @@ bool check = true;
  Console.WriteLine(c);
  Console.WriteLine(check);
 
-//quetão 2
+//questão 2
 
 Console.WriteLine ("Digite dois numeros inteiros");
 
@@ -25,3 +25,12 @@ Console.WriteLine("Soma = " + S);
 Console.WriteLine("Subtração = " + Sub);
 Console.WriteLine("Divisão = " + D);
 Console.WriteLine("Multiplicação = " + M);
+
+//questão 3
+
+Console.WriteLine ("Digite seu nome e sua idade:");
+
+string n = (Console.ReadLine());
+int i = int.Parse(Console.ReadLine());
+
+Console.WriteLine ($"Olá, {n}, você tem {i} anos.");
