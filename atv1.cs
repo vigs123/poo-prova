@@ -77,22 +77,34 @@
     {
         Console.WriteLine("Você é menor de idade, você ainda não está apto(a) a votar ou a dirigir");
     }
+ //questão 7
+     static float CalcularMedia(float n1, float n2, float n3)
+     {
+        float soma = n1 + n2 + n3;
+        float media = soma/ 3;
+        return media;
+     }
+     static void Main (){
+     Console.Write("Digite a primeira nota: ");
+     float n1 = float.Parse(Console.ReadLine());
+    Console.Write("Digite a segunda nota: ");
+     float n2 = float.Parse(Console.ReadLine());
+     Console.Write("Digite a terceira nota: ");
+     float n3 = float.Parse(Console.ReadLine());
+     float media = CalcularMedia(n1, n2, n3);
 
-//questão 7
-
- Console.Write("Digite a primeira nota: ");
-  float n1 = float.Parse(Console.ReadLine());
-
-  Console.Write("Digite a segunda nota: ");
-  float n2 = float.Parse(Console.ReadLine());
-
-  Console.Write("Digite a terceira nota: ");
-  float n3 = float.Parse(Console.ReadLine());
-  float media = CalcularMedia(n1, n2, n3);
-
-  static float CalcularMedia(float n1, float n2, float n3)
-    {
-        return (n1 + n2 + n3) / 3;
+    Console.WriteLine($"A média das notas é: {media}");
     }
-    Console.WriteLine("A média das notas é: " + media);
+
+    Main();
 // questão 8
+
+  int q = int.Parse(Console.ReadLine());
+  int w = int.Parse(Console.ReadLine());
+  int t = int.Parse(Console.ReadLine());
+
+  if( q > w && t < w ){
+    Console.WriteLine($"o numero {q} e o maior");
+    Console.WriteLine($"o numero {t} e o menor");
+  }
+   
