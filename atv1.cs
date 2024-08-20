@@ -99,12 +99,30 @@
     Main();
 // questão 8
 
-  int q = int.Parse(Console.ReadLine());
-  int w = int.Parse(Console.ReadLine());
-  int t = int.Parse(Console.ReadLine());
+  Console.WriteLine("Digite 3 numeros:");
+    int N1 = int.Parse(Console.ReadLine());
+    int N2 = int.Parse(Console.ReadLine());
+    int N3 = int.Parse(Console.ReadLine());
 
-  if( q > w && t < w ){
-    Console.WriteLine($"o numero {q} e o maior");
-    Console.WriteLine($"o numero {t} e o menor");
-  }
-   
+    int maior = N1;
+    if (N2 > maior)
+    {
+        maior = N2;
+    }
+    if (N3 > maior)
+    {
+         maior = N3;
+    }
+
+    int menor = N1;
+    if (N2 < menor)
+    {
+        menor = N2;
+    }
+    if (N3 < menor)
+        {
+        menor = N3;
+        }
+
+    Console.WriteLine($"O maior número é: {maior}");
+    Console.WriteLine($"O menor número é: {menor}");
